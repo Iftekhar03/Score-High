@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main(void) {
+	// your code goes here
+	int a;
+	scanf("%d",&a);
+	for(int i=0;i<a;i++)
+	{
+	    int b,c,d,e,n;
+	    scanf("%d",&n);
+	    scanf("%d%d%d%d",&b,&c,&d,&e);
+	    if((b>=c)&&(b>=d)&&(b>=e))
+	    printf("%d\n",b);
+	    else if((b<=c)&&(c>=d)&&(c>=e))
+	    printf("%d\n",c);
+	    else if((b<=d)&&(c<=d)&&(d>=e))
+	    printf("%d\n",d);
+	    else if((b<=e)&&(e>=d)&&(c<=e))
+	    printf("%d\n",e);
+	    
+	}
+	return 0;
+}
+
